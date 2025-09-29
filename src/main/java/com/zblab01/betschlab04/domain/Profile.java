@@ -14,11 +14,11 @@ import java.time.LocalDate;
 public class Profile {
 
     @Id
-    private Long id; // same value as users.id
+    private Long id;
 
     @OneToOne
     @MapsId
-    @JoinColumn(name = "id") // PK is also FK to users.id
+    @JoinColumn(name = "id")
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
     private User user;
@@ -32,7 +32,6 @@ public class Profile {
     @Column(name = "date_of_birth")
     private LocalDate dateOfBirth;
 
-    // Note: follow the lab's spelling "loyality_points"
     @Column(name = "loyality_points")
     private Integer loyalityPoints;
 }

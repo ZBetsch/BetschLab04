@@ -34,7 +34,6 @@ public class User {
     @OneToOne(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
     private Profile profile;
 
-    // helper methods (optional)
     public void addAddress(Address address) {
         addresses.add(address);
         address.setUser(this);

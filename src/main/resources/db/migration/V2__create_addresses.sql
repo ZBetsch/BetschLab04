@@ -1,5 +1,3 @@
--- V2__create_addresses.sql
--- Creates the addresses table with a many-to-one relationship to users
 CREATE TABLE IF NOT EXISTS addresses (
   id BIGINT PRIMARY KEY AUTO_INCREMENT,
   street VARCHAR(255) NOT NULL,

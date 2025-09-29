@@ -1,5 +1,3 @@
--- V3__create_profiles.sql
--- Creates the profiles table with a one-to-one primary-key relationship to users
 CREATE TABLE IF NOT EXISTS profiles (
   id BIGINT PRIMARY KEY, -- also FK to users.id
   bio TEXT,
